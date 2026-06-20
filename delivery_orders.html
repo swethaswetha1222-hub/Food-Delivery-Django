@@ -1,0 +1,8 @@
+<h2>Delivery Oders</h2>
+
+{% for o in orders %}
+
+<p>Order{{o.id}}-{{o.status}}</p>
+<a href="/delivery/complete/{{o.id}}/">complete</a>
+
+{% endfor %}

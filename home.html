@@ -1,0 +1,5 @@
+{% for food in foods %}
+<p>{{food.name}}</p>
+<p>{{food.price}}</p>
+<p><a href="{% url 'order' food.id %}">order</a></p>
+{% endfor %}
